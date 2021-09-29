@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
-void main() => runApp(MyApp());
+
+void main(){
+  runApp(MyApp() );
+}
+
+
 class MyApp extends StatelessWidget {
+  var ms = { "mensaje": "Soy un mensaje" };
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -10,7 +16,7 @@ class MyApp extends StatelessWidget {
           title: Text('Flutter layout demo'),
         ),
         body: Center(
-          child: Text('Hello World'),
+          child: Text(ms['mensaje'].toString()),
         ),
       ),
     );
